@@ -1,3 +1,5 @@
+using static Append;
+
 public static class Promt{
     public static string[] Enter(){
         string[] array = [];
@@ -13,7 +15,7 @@ public static class Promt{
                 }
                 isEmpty = false;
             }
-            ArrayAppend(array, word);
+            else array = ArrayAppend(array, word);
         }
         return array;
     }
