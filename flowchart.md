@@ -14,6 +14,7 @@ graph TD;
 5--No-->8{{"i=0; i < length; i+=1"}};
 8--Yes-->9{"array[i].Length <= 3"};
 9--Yes-->10[/"output array[i]"/];
+9--No-->8;
 10-->8;
 6-->8;
 8--No-->11(Finish);
